@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+nav{
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li{
+            height: 50px;
+    
+            &:first-child{
+                margin-right: auto;
+            }
+
+            a{
+                height: 100%;
+                padding: 0 30px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: white;
+                transition: 0.25s ease;
+            }
+
+            a:hover{
+                background-color: #f0f0f0;
+                color: black;
+                font-size: 120%;
+            }
+        }
+    }
+
+    .navbar{
+        position: fixed;
+        background-color: black;
+    }
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    li{
+        width: 100%;
+    }
+
+    a{
+        width: 100%;
+        color: black;
+    }
+}
+
+.menuButton{
+    display: none;
+}
+
+.scrollUp{
+    position: fixed;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 20%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    transition: ease 0.25s;
+
+    .scrollTT{
+        visibility: hidden;
+        width: 150px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        translate: 0 20%;
+        z-index: 1;   
+    }
+
+    &:hover{
+        opacity: 90%;
+
+        .scrollTT{
+            visibility: visible;
+        }
+    }
+
+    &:active{
+        background-color: #e0e0e0;
+    }
+}
+
+.backpage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(script.jpeg);
+
+    .page{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 60%;
+        background-color: #f0f0f0;
+        color: black;
+
+        .title{
+            margin-top: 75px;
+            padding: 25px 50px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .subtitle{
+            margin: 0;
+            padding: 25px 50px;
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .info{
+            margin: 0;
+            padding: 25px 50px;
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .bullet{
+            margin: 0;
+            padding: 25px 50px;
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .container{
+            margin: 0;
+            padding: 25px 50px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .boxes{
+                margin-bottom: 50px;
+                border: 1px solid black;
+                width: 25%;
+                background-color: white;
+
+                .imgBox{
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+    
+    }
+}
+
+
+
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
