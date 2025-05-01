@@ -1,3 +1,16 @@
+:root{
+    --colorprimary: #2dba4e;
+    --colorsecondary: #24292e;
+    --colortertiary: #fafbfc;
+    --coloraccent: #2b3137;
+    --colorwhite: #ffffff;
+    --colorblack: #000000;
+
+    --ffNav: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ffTitle: Arial, Helvetica, sans-serif;
+    --ffText: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,13 +22,13 @@ html{
 
 body{
     min-height: 100vh;
-    background-color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--colortertiary);
+    font-family: var(--ffNav);
     position: relative;
 }
 
 nav{
-    background-color: black;
+    background-color: var(--colorsecondary);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
     ul{
@@ -38,13 +51,13 @@ nav{
                 text-decoration: none;
                 display: flex;
                 align-items: center;
-                color: white;
+                color: var(--colortertiary);
                 transition: 0.25s ease;
             }
 
             a:hover{
-                background-color: #f0f0f0;
-                color: black;
+                background-color: var(--colortertiary);
+                color: var(--colorprimary);
                 font-size: 120%;
             }
         }
@@ -77,7 +90,7 @@ nav{
 
     a{
         width: 100%;
-        color: black;
+        color: var(--colorsecondary)
     }
 }
 
@@ -90,7 +103,7 @@ nav{
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #f0f0f0;
+    background-color: var(--colortertiary);
     bottom: 40px;
     right: 40px;
     border-radius: 20%;
@@ -103,8 +116,8 @@ nav{
     .scrollTT{
         visibility: hidden;
         width: 150px;
-        background-color: black;
-        color: #fff;
+        background-color: var(--colorsecondary);
+        color: var(--colorwhite);
         text-align: center;
         padding: 5px 0;
         border-radius: 6px;
@@ -116,15 +129,13 @@ nav{
     }
 
     &:hover{
-        opacity: 90%;
-
         .scrollTT{
             visibility: visible;
         }
     }
 
     &:active{
-        background-color: #e0e0e0;
+        background-color: var(--colorprimary);
     }
 }
 
@@ -142,14 +153,14 @@ nav{
         flex-wrap: wrap;
         height: 100%;
         width: 60%;
-        background-color: #f0f0f0;
-        color: black;
+        background-color: var(--colortertiary);
+        color: var(--colorsecondary);
 
         .title{
             margin-top: 75px;
             padding: 25px 50px;
             width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: var(--ffTitle);
             font-weight: bold;
             font-size: 24px;
             text-transform: uppercase;
@@ -159,7 +170,7 @@ nav{
             margin: 0;
             padding: 25px 50px;
             width: 100%;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: var(--ffText);
             font-weight: bold;
             font-size: 20px;
         }
@@ -168,8 +179,8 @@ nav{
             margin: 0;
             padding: 0 50px 25px 50px;
             width: 100%;
-            background-color: white;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: var(--colorwhite);
+            font-family: var(--ffText);
             font-size: 16px;
             line-height: 1.5;
         }
@@ -178,30 +189,28 @@ nav{
             margin: 0;
             padding: 0 50px 25px 80px;
             width: 100%;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: var(-ffText);
             font-size: 16px;
             line-height: 1.5;
         }
 
         .container{
             margin: 0;
-            padding: 25px 50px;
+            padding: 0;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
             align-items: center;
 
-            .boxes{
-                margin-bottom: 50px;
-                border: 1px solid black;
-                width: 25%;
-                background-color: white;
+            .cards{
+                margin: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border: 1px solid var(--colorblack);
+                background-color: var(--colorwhite);
 
-                .imgBox{
-                    margin: 0;
-                    width: 100%;
-                }
             }
         }
     
