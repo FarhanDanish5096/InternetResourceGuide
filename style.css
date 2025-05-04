@@ -27,6 +27,10 @@ html{
 
 a{
     color: blue;
+
+    &:active{
+        opacity: 80%;
+    }
 }
 
 body{
