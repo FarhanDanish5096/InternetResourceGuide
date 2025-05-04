@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="hideOnMobile"><a href="/homepage.html">Home</a></li>
+                <li class="hideOnMobile"><a href="/about.html">About</a></li>
+                <li class="hideOnMobile"><a href="/install.html">Setup</a></li>
+                <li class="hideOnMobile"><a href="/features.html">Features<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                    <ul class="dropdown">
+                        <li class="hideOnMobile"><a href="/features/repo.html">Repositories</a></li>
+                        <li class="hideOnMobile"><a href="/features/branch.html">Branches</a></li>
+                        <li class="hideOnMobile"><a href="/features/commit.html">Commits</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="/commands.html">Commands<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                    <ul class="dropdown">
+                        <li class="hideOnMobile"><a href="/commands/init.html">Init</a></li>
+                        <li class="hideOnMobile"><a href="/commands/add.html">Add</a></li>
+                        <li class="hideOnMobile"><a href="/commands/pull.html">Pull</a></li>
+                        <li class="hideOnMobile"><a href="/commands/push.html">Push</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="/characteristics.html">Characteristics<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                    <ul class="dropdown">
+                        <li class="hideOnMobile"><a href="/characteristics/design.html">Design</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/merge.html">Merging Strategies</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/dsa.html">Data Structures</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/references.html">References</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="/resource.html">Resources</a>
+                <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <p class="logo">RESOURCES</p>
+    </header>
+
+    <div class="backpage">
+        <div class="page">
+            <div class="section">
+                <p class="title">Resource Abstracts</p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://docs.github.com/en/get-started/using-git/about-git#how-github-works/">1. About Git (GitHub Docs)</a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    A handbook created by GitHub – a platform that utilizes Git to its greatest capacity – that generalizes the terms and features surrounding Git. GitHub itself is a website that helps people work together within coding environments. This handbook explains how Git works as a tool that keeps track of changes in code and makes collaboration work easier. The handbook provides an overview of what Git does and how GitHub uses Git to make group projects easier.<br><br>
+                    The page primarily talks about Git as it explains what it is, how it works, and why it is useful for consumers. Then it teaches a couple features of Git – repositories, commit, branches – which happens to be the scope of my online guide. Besides that, though, there is plenty of other information in other sections that is beyond my focus but could prove useful.<br><br>
+                    This information is very useful in prefacing the entire concept of Git and GitHub, especially for beginners. It provides a brief explanation of how version control works in a way that people can understand and be confident about before using Git/GitHub. 
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>Use the sidebar (near the top left) to skillfully navigate the topics easily</li>
+                        <li>Use the search bar to look for specific keywords or terms scattered throughout the document</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://en.wikipedia.org/wiki/Git/">2. Git (Wikipedia Page)</a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    A Wikipedia article about Git by numerous editors that references the creator of Git, Linus Torvalds – a respectable software engineer who is the creator and developer of Linux. It is meant to give a full but general overview of what Git is and how it works today, with tracks of its history.<br><br>
+                    For the introduction, the page covers the history of Git down to the technical details and related tools. Then, the focus shifts toward the several components of Git (characteristics, data structures, commands, implementations, etc.) with very detailed explanations that I would consider is not quite beginner friendly. My scope is towards the characteristics of Git.<br><br>
+                    This information is very useful for people who wish for a deeper understanding of Git that is beyond GitHub as it provides the historical context of Git. For beginners, using this page could be more effective as a supplement after reading a simpler document such as the GitHub docs which might not provide enough information that they expect from it.
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>Use the table of contents to navigate the Wikipedia page near the left side of the page</li>
+                        <li>Plenty of references used throughout the document that are listed at the very end that might be useful for further inquiries</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://www.w3schools.com/git/">3. Git and GitHub Introduction (W3Schools)</a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    An online tutorial made by W3Schools, a website known for teaching web and programming skills (Python, Java, etc.) in a manner that is very beginner friendly and simple. It is built to help people learn through interactive activities and lots of examples.<br><br>
+                    The Git section of W3Schools explains how to use Git step-by-step through short lessons, examples and code snippets. Moving to other sections leads to Git commands (init, add, commit, push) which is my scope from this page, and others such as setting up Git on a computer and working with GitHub.<br><br>
+                    This information is perfect for beginners who are active learners that find constructive learning much better than just reading or listening to the information. For my purpose, it helps introduce the core features of Git in a way that builds confidence and understanding through hands-on practice.
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>Try learning through interactive lessons for a better understanding</li>
+                        <li>Bookmark pages for easier access sometime later</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://devmountain.com/blog/top-git-commands-how-to-use/">4. 10 Top Git Commands and How to Use Them (DevMountain)</a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    A blog post written by DevMountain, a coding bootcamp that helps people learn web development and other tech skills. The post is designed to be a quick and useful reference about Git, one that is short and concise.<br><br>
+                    The content includes a “How to use Git” section that showcases the steps to get Git deployed on the system and popular Git commands. My scope will center around the How to use Git section.<br><br>
+                    This information is useful to save time and effort from scrolling through pages of text as it gives a clear list of steps and commands that can be easily obtained in a few seconds from entering the website. It helps readers to remove the clutter of long sentences and skim through the list without feeling overwhelmed. 
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>Skim through the list on the first browse, then carefully read specific sections of information that you’re looking for </li>
+                        <li>Use the page as a review tool to quickly reference when needed</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://www.codecademy.com/resources/docs/git">5. Git (Codecademy) </a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    This is a guide created by Codecademy, a popular online platform for learning to code. The main page is designed for quick look ups for people to use.<br><br>
+                    The page features a brief overview of Git on the landing page which then directs you to various Git concepts that can be clicked on and sent to corresponding pages that emphasize the selected concept. My scope for this page is based on a select few of Git concepts: Add, Branch, Clone, Commit, etc. I am cross-referencing W3Schools for this part.<br><br>
+                    This information is useful for beginners to learn about specific Git concepts separately without feeling cluttered. The users can easily trace back to a concept that they have read about without having trouble searching for it. It works well as a support tool alongside other coding practices or lessons such as the other documents in this list.
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>Click on specific Git concepts that you wish to learn more about</li>
+                        <li>Focus on one concept at a time before moving onto the next</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="subtitle"><a href="https://www.youtube.com/watch?v=RGOj5yH7evk">6. Git and GitHub for Beginners – Crash Course (YouTube Video) </a></p>
+                <p class="info"><strong>Overview</strong></p>
+                <p class="info">
+                    A YouTube video published by freeCodeCamp.org of a Git and GitHub crash course spanning an entire hour made for beginners. The video provides a hands-on guide that users can follow along with through visual learning and curated slides and plenty of code snippets.<br><br>
+                    The video explains what Git and GitHub are, why they’re very useful, and shows step-by-step on how to use them with commands and examples. It provides a foolproof way of learning by following the lead of the video that covers everything you need to know of the topics. My scope for this video focuses on terminologies and Git commands.<br><br>
+                    The video is extremely useful for visual learners or people that are stuck on certain steps of Git or GitHub. It is ideal for beginners that want to see how Git functions in real time instead of reading long paragraphs about it. The video helps to break down key concepts into more digestible content that is overall less intimidating. 
+                </p>
+                <p class="info"><strong>Tips for using the Website</strong></p>
+                <p class="info">
+                    <ul class="info bullet">
+                        <li>The video provides a chapter tab that lets you navigate the video by clicking on the chapter of interest</li>
+                        <li>Pause and practice as you progress through the video to solidify your understanding of concepts</li>
+                        <li>Watch the video at a higher playback speed to review familiar concepts</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <a class="scrollUp" href="#">
+        <span class="scrollTT">Click to go back up!</span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+    </a>
+</body>
+</html>

@@ -25,6 +25,10 @@ html{
     scroll-padding-top: 50px;
 }
 
+a{
+    color: blue;
+}
+
 body{
     min-height: 100vh;
     background-color: var(--colorwhite);
@@ -47,6 +51,7 @@ header{
         font-weight: bolder;
         font-size: 25px;
         color: var(--colorwhite);
+        margin-right: 20px;
     }
 
     .navbar > ul{
@@ -103,78 +108,7 @@ header{
         }
     }
 }
-/*
-nav{
 
-    ul{
-        width: 100%;
-        list-style: none;
-        display: flex;     
-
-        li{
-            height: 50px;
-    
-            &:first-child{
-                margin-right: auto;
-            }
-
-            a{
-                height: 100%;
-                padding: 0 30px;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                color: var(--colors3);
-                transition: 0.25s ease;
-            }
-
-            a:hover{
-                background-color: var(--colors3);
-                color: var(--colorp4);
-                font-size: 120%;
-            }
-        }
-    }
-
-    .navbar{
-        position: fixed;
-        background-color: black;
-        z-index: 1000;
-
-        .dropdown{
-            position: absolute;
-            right: 0;
-            width: 200px;
-            background-color: var(--colorblack);
-        }
-    }
-
-    .sidebar{
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 250px;
-        z-index: 999;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
-        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    
-        li{
-            width: 100%;
-        }
-    
-        a{
-            width: 100%;
-            color: var(--colors1)
-        }
-    }
-}
-*/
 .menuButton{
     display: none;
 }
@@ -227,8 +161,6 @@ nav{
     flex-wrap: wrap;
     background-color: var(--colorp4);
     min-height: 100vh;
-    /*
-    background-image: url(script.jpeg);*/
 
     .page{
         display: flex;
@@ -242,6 +174,7 @@ nav{
         .section{
             scroll-snap-align: start;
             width: 100%;
+            border-top: 1px dotted var(--colorblack);
 
             .title{
                 margin: 100px 50px 50px 50px;
@@ -259,14 +192,19 @@ nav{
                 margin: 50px;
                 font-family: var(--ffText);
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 24px;
+            }
+
+            .subheading{
+                font-style: italic;
+                text-decoration: underline;
             }
     
             .info{
                 margin: 50px;
                 color: var(--colors3);
                 font-family: var(--ffText);
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 1.5;
             }
     
@@ -291,7 +229,8 @@ nav{
                 transition: 0.2s;
                 width: 300px;
                 color: var(--colors3);
-                background-color: var(--colorp4);
+                background-color: var(--colors1);
+                font-family: var(--ffText);
 
                 &:hover{
                     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -304,20 +243,5 @@ nav{
             }
         }
     
-    }
-}
-
-@media(max-width: 1000px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menuButton{
-        display: block;
-    }
-}
-
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
     }
 }

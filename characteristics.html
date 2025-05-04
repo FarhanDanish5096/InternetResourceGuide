@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Characteristics Page</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -11,36 +11,37 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li class="hideOnMobile"><a href="homepage.html">Home</a></li>
-                <li class="hideOnMobile"><a href="about.html">About</a></li>
-                <li class="hideOnMobile"><a href="install.html">Installation</a></li>
-                <li class="hideOnMobile"><a href="features.html">Features<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                <li class="hideOnMobile"><a href="/homepage.html">Home</a></li>
+                <li class="hideOnMobile"><a href="/about.html">About</a></li>
+                <li class="hideOnMobile"><a href="/install.html">Setup</a></li>
+                <li class="hideOnMobile"><a href="/features.html">Features<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
                     <ul class="dropdown">
-                        <li class="hideOnMobile"><a href="#">Repositories</a></li>
-                        <li class="hideOnMobile"><a href="#">Branches</a></li>
-                        <li class="hideOnMobile"><a href="#">Commits</a></li>
+                        <li class="hideOnMobile"><a href="/features/repo.html">Repositories</a></li>
+                        <li class="hideOnMobile"><a href="/features/branch.html">Branches</a></li>
+                        <li class="hideOnMobile"><a href="/features/commit.html">Commits</a></li>
                     </ul>
                 </li>
-                <li class="hideOnMobile"><a href="commands.html">Commands<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                <li class="hideOnMobile"><a href="/commands.html">Commands<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
                     <ul class="dropdown">
-                        <li class="hideOnMobile"><a href="#">Init</a></li>
-                        <li class="hideOnMobile"><a href="#">Add</a></li>
-                        <li class="hideOnMobile"><a href="#">Pull</a></li>
-                        <li class="hideOnMobile"><a href="#">Push</a></li>
+                        <li class="hideOnMobile"><a href="/commands/init.html">Init</a></li>
+                        <li class="hideOnMobile"><a href="/commands/add.html">Add</a></li>
+                        <li class="hideOnMobile"><a href="/commands/pull.html">Pull</a></li>
+                        <li class="hideOnMobile"><a href="/commands/push.html">Push</a></li>
                     </ul>
                 </li>
-                <li class="hideOnMobile"><a href="characteristics.html">Characteristics<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                <li class="hideOnMobile"><a href="/characteristics.html">Characteristics<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
                     <ul class="dropdown">
-                        <li class="hideOnMobile"><a href="#">Design</a></li>
-                        <li class="hideOnMobile"><a href="#">Merging Strategies</a></li>
-                        <li class="hideOnMobile"><a href="#">Data Structures</a></li>
-                        <li class="hideOnMobile"><a href="#">References</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/design.html">Design</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/merge.html">Merging Strategies</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/dsa.html">Data Structures</a></li>
+                        <li class="hideOnMobile"><a href="/characteristics/references.html">References</a></li>
                     </ul>
                 </li>
+                <li class="hideOnMobile"><a href="/resource.html">Resources</a>
                 <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <p href="#" class="logo">HOME</p>
+        <p class="logo">CHARACTERISTICS</p>
     </header>
 
     <div class="backpage">
@@ -48,35 +49,47 @@
             <div class="section">
                 <p class="title">Git Characteristics</p>
             </div>
+
             <div class="section">
                 <p class="subtitle">Overview</p>
-                <p class="info">Git (Wikipedia)
-                <br>a. URL: https://en.wikipedia.org/wiki/Git
-                <br>b. What is this?
-                <br>A Wikipedia article about Git by numerous editors that references the
-                creator of Git, Linus Torvalds – a respectable software engineer who is the
-                creator and developer of Linux. It is meant to give a full but general overview
-                of what Git is and how it works today, with tracks of its history.
-                <br>c. What is in it (content, scope)?
-                <br>For the introduction, the page covers the history of Git down to the technical
-                details and related tools. Then, the focus shifts toward the several
-                components of Git (characteristics, data structures, commands,
-                implementations, etc.) with very detailed explanations that I would consider
-                is not quite beginner friendly. My scope is towards the characteristics of
-                Git.
-                <br>d. How is that information relevant to and useful for my specific audience and
-                purpose?
-                <br>This information is very useful for people who wish for a deeper
-                understanding of Git that is beyond GitHub as it provides the historical
-                context of Git. For beginners, using this page could be more effective as a
-                supplement after reading a simpler document such as the GitHub docs
-                which might not provide enough information that they expect from it.
-                <br>e. What tips can help someone use the resource efficiently and effectively?
-                <br>• Use the table of contents to navigate the Wikipedia page near the left side
-                of the page
-                <br>• Plenty of references used throughout the document that are listed at the
-                very end that might be useful for further inquiries
-                <br>""This is just Abstract draft text as placeholder""</p>
+                <p class="info">
+                    Git and GitHub have become essential tools for modern software development, enabling efficient version control, collaboration, and code management.<br><br>
+                    It is important to know that Git and GitHub are separate entities, yet, they are always seen working in tandem for the best of both functionalities.<br><br>
+                    Now, I will be explaining the differences between Git and GitHub.<br></p>
+            </div>
+
+            <div class="section">
+                <p class="info subheading"><strong>What is Git?</strong></p>
+                <p class="info">Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. <br><br>
+                                Here are some key points:</p>
+                <ul class="info bullet">
+                    <li><strong>Version Control</strong>: Git tracks changes in source code during software development, allowing multiple developers to work on the same project simultaneously.</li>
+                    <li><strong>Distributed System</strong>: Git allows every developer to have a complete copy of the repository, including its history of changes.</li>
+                    <li><strong>Branching and Merging</strong>: Git supports branching, enabling developers to create separate branches for new features of bug fixes. These brances can be merged back into the main brach once the work is complete.</li>
+                    <li><strong>Commit History</strong>: Git maintains a detailed history of changes, including who made the changes and when, making it easier to revert to previous version if required.</li>
+                    <li><strong>Collaboration</strong>: Git facilitates collaboration among developers by allowing them to share changes and updates through repositories hosted on platforms like GitHub, GitLab, and BitBucket.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="info subheading"><strong>What is GitHub?</strong></p>
+                <p class="info">GitHub is a web-based platform used for version control and collaborative software development. <br><br>
+                                Here are the key points:</p>
+                <ul class="info bullet">
+                    <li><strong>Repository Hosting</strong>: GitHub hosts repositories, which are collections of files and their revision histories. Developers can store their code, track changes, and collaborate with others.</li>
+                    <li><strong>Git Integration</strong>: GitHub integrates seamlessly with Git, allowing users to manage their Git repositories online. This include features like branching, merging, and pull requests.</li>
+                    <li><strong>Collaboration Tools</strong>: GitHub provides tools for collaboration, such as issues, pull requests, and projects boards. These tools help teams manage tasks, discuss changes, and review code.</li>
+                    <li><strong>Social Coding</strong>: GitHub fosters a community of developers who can follow each other, save favorite repositories, and contribute to open-source projects. This social aspect encourges sharing and learning.</li>
+                    <li><strong>Documentation and Wikis</strong>: GitHub allows developers to create and maintain documentation and wikis for their projects, making it easier to share information and instructions.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="info subheading">References Used for Page</p>
+                <ul class="info bullet">
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
             </div>
         </div>
     </div>
