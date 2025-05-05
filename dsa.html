@@ -50,36 +50,41 @@
                 <p class="title">Characteristics: Data Structures</p>
             </div>
             <div class="section">
-                <p class="subtitle"><a href="https://docs.github.com/en/get-started/using-git/about-git#how-github-works/">1. About Git (GitHub Docs)</a></p>
-                <p class="info"><strong>Overview</strong></p>
+                <p class="subtitle">Data Structures</p>
                 <p class="info">
-                    A handbook created by GitHub – a platform that utilizes Git to its greatest capacity – that generalizes the terms and features surrounding Git. GitHub itself is a website that helps people work together within coding environments. This handbook explains how Git works as a tool that keeps track of changes in code and makes collaboration work easier. The handbook provides an overview of what Git does and how GitHub uses Git to make group projects easier.<br><br>
-                    The page primarily talks about Git as it explains what it is, how it works, and why it is useful for consumers. Then it teaches a couple features of Git – repositories, commit, branches – which happens to be the scope of my online guide. Besides that, though, there is plenty of other information in other sections that is beyond my focus but could prove useful.<br><br>
-                    This information is very useful in prefacing the entire concept of Git and GitHub, especially for beginners. It provides a brief explanation of how version control works in a way that people can understand and be confident about before using Git/GitHub. 
+                    Git is fundamentally a versioned content-addressable file system, composed of two main data structures.
                 </p>
-                <p class="info"><strong>Tips for using the Website</strong></p>
-                <p class="info">
+            </div>
+            <div class="section">
+                <p class="info subheading">Index (staging area)</p>
                     <ul class="info bullet">
-                        <li>Use the sidebar (near the top left) to skillfully navigate the topics easily</li>
-                        <li>Use the search bar to look for specific keywords or terms scattered throughout the document</li>
+                        <li>A mutable area that records what will go into the next commit.</li>
+                        <li>Bridges the working directory and the repository.</li>
                     </ul>
                 </p>
             </div>
             <div class="section">
-                <p class="subtitle"><a href="https://en.wikipedia.org/wiki/Git/">2. Git (Wikipedia Page)</a></p>
-                <p class="info"><strong>Overview</strong></p>
-                <p class="info">
-                    A Wikipedia article about Git by numerous editors that references the creator of Git, Linus Torvalds – a respectable software engineer who is the creator and developer of Linux. It is meant to give a full but general overview of what Git is and how it works today, with tracks of its history.<br><br>
-                    For the introduction, the page covers the history of Git down to the technical details and related tools. Then, the focus shifts toward the several components of Git (characteristics, data structures, commands, implementations, etc.) with very detailed explanations that I would consider is not quite beginner friendly. My scope is towards the characteristics of Git.<br><br>
-                    This information is very useful for people who wish for a deeper understanding of Git that is beyond GitHub as it provides the historical context of Git. For beginners, using this page could be more effective as a supplement after reading a simpler document such as the GitHub docs which might not provide enough information that they expect from it.
-                </p>
-                <p class="info"><strong>Tips for using the Website</strong></p>
-                <p class="info">
+                <p class="info subheading">Object database</p>
                     <ul class="info bullet">
-                        <li>Use the table of contents to navigate the Wikipedia page near the left side of the page</li>
-                        <li>Plenty of references used throughout the document that are listed at the very end that might be useful for further inquiries</li>
+                        <li>Stores blobs (file contents), trees (directories), commits (history), tags (named points), and packfiles (compressed bundles).</li>
+                        <li>Objects are named by their SHA-1 hash and stored in a directory hierarchy.</li>
                     </ul>
                 </p>
+            </div>
+            <div class="section">
+                <p class="info subheading">Key Characteristics</p>
+                    <ul class="info bullet">
+                        <li><strong>No file-based history</strong>: Git doesn't track file renames or moves explicitly.</li>
+                        <li><strong>Efficient compression</strong>: Blobs are delta-compressed in packfiles to save space.</li>
+                        <li><strong>Snapshot-based</strong>: A commit records the full state of the project at a point in time, not a series of file diffs.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="section">
+                <p class="info subheading">References Used for Page</p>
+                <ul class="info bullet">
+                    <li><a href="https://en.wikipedia.org/wiki/Git#Characteristics">Git (Wikipedia Page)</a></li>
+                </ul>
             </div>
         </div>
     </div>
