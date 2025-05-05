@@ -33,6 +33,11 @@ a{
     }
 }
 
+img{
+    width: 90%;
+    padding: 5%;
+}
+
 body{
     min-height: 100vh;
     background-color: var(--colorwhite);
@@ -164,6 +169,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--colorp4);
+    background-image: url(script.jpeg);
     min-height: 100vh;
 
     .page{
